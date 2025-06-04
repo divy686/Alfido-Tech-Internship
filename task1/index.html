@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya's Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <div class="profile-pic-container">
+      <img src="images/divya.jpg" alt="Divya" class="profile-pic" />
+      <h1>Divya Rana</h1>
+      <p class="click-text" onclick="scrollToDetails()">Click to know more...</p>
+    </div>
+  </section>
+
+  <section class="details" id="details">
+    <h2>About Me</h2>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>DOB:</strong> 26-08-2005</p>
+    <p><strong>Email:</strong> divyaranagzb2gmail.com</p>
+    <p><strong>Biography:</strong> I am a passionate front-end developer who enjoys creating interactive and responsive websites. Currently pursuing my degree in Computer Science, I love learning new technologies and building projects that solve real-world problems.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>SQL / Database</li>
+      <li>PHP</li>
+      <li>C++ programming</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Listening to music</li>
+      <li>Nature Exploration</li>
+      <li>Learning new things</li>
+    </ul>
+  </section>
+
+  <script>
+    function scrollToDetails() {
+      document.getElementById('details').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
